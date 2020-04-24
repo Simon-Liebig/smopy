@@ -60,7 +60,7 @@ Smopy currently requires:
 To install, `pip install smopy` or:
 
 ```python
-git clone git@github.com:rossant/smopy.git
+git clone git@github.com/Simon-Liebig/smopy.git
 cd smopy
 python setup.py develop
 ```
