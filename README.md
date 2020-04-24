@@ -7,7 +7,10 @@ Give a box in geographical coordinates (latitude/longitude) and a zoom level, Sm
 
 ```python
 import smopy
-map = smopy.Map((42., -1., 55., 3.), z=4)
+
+BBox =(42., -1., 55., 3.)
+
+map = smopy.Map((BBox[0], BBox[1], BBox[2], BBox[3]), z=4)
 map.show_ipython()
 ```
 ![Europe map](examples/europe.png)
