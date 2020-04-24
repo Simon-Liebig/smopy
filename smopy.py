@@ -309,7 +309,16 @@ class Map(object):
             return np.c_[px, py]
         else:
             return px, py
-
+        
+    def to_coords(self, px, py):
+        """Convert from pixels to geographical coordinates.
+	       Helpful to get the real Boundings of the fetched Img.
+	    """
+        x=px/self.tilesize +self.xmin
+        y=py/self.tilesize +self.ymin
+        lat, lon = num2deg(x, y, self.z)
+        return lat, lon
+    
     def get_allowed_zoom(self, z=18):
         box_tile = get_tile_box(self.box, z)
         box = correct_box(box_tile, z)
