@@ -47,7 +47,7 @@ BBox=list(map.to_coords(0,0)+map.to_coords(map.w-1,map.h-1))
 plt.yticks(np.linspace(0,map.h-1,ysteps,endpoint=True),np.around(np.linspace(BBox[0],BBox[2],ysteps,endpoint=True),decimals=4));
 plt.xticks(np.linspace(0,map.w-1,xsteps,endpoint=True),np.around(np.linspace(BBox[1],BBox[3],xsteps,endpoint=True),decimals=4));
 ```
-
+![Europe map](examples/europe3.png)
 ## Installation
 
 Smopy currently requires:
